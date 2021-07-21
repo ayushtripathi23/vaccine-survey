@@ -168,6 +168,8 @@ export default {
           console.log("Document successfully written!");
           console.log(doc.id);
           this.proId = doc.id;
+          this.form = "";
+          this.$swal("Your Form Submitted Successfully");
         })
         .catch((error) => {
           console.error("Error writing document: ", error);
